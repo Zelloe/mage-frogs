@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://48hfhgbcltuv"]
+
+[ext_resource type="Script" uid="uid://b7rnv01i1kn7a" path="res://movement_left.gd" id="1_23ycj"]
+[ext_resource type="Texture2D" uid="uid://cnklotvrr1qvu" path="res://assets/square.png" id="1_rnxwr"]
+
+[node name="PlayerL" type="Node2D" unique_id=2055167309]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2069768529]
+script = ExtResource("1_23ycj")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=297017376]
+texture = ExtResource("1_rnxwr")
