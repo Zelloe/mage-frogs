@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bew2wj1h7l3ti"
-path="res://.godot/imported/grama.png-2606d58d13b6629e185dae0c77cb2254.ctex"
+uid="uid://u4ottagvh0b6"
+path="res://.godot/imported/grama_parede.png-c916e0c9982c19d443efe35c76b21f0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/grama.png"
-dest_files=["res://.godot/imported/grama.png-2606d58d13b6629e185dae0c77cb2254.ctex"]
+source_file="res://assets/grama_parede.png"
+dest_files=["res://.godot/imported/grama_parede.png-c916e0c9982c19d443efe35c76b21f0c.ctex"]
 
 [params]
 
