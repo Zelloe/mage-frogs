@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d1gdrujrgjoli"]
+
+[ext_resource type="Texture2D" uid="uid://bvc2bb24if61w" path="res://assets/fogo.png" id="1_xs3m7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_11fwb"]
+radius = 8.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36til"]
+atlas = ExtResource("1_xs3m7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s37p7"]
+atlas = ExtResource("1_xs3m7")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvst4"]
+atlas = ExtResource("1_xs3m7")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prn2k"]
+atlas = ExtResource("1_xs3m7")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_myida"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36til")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s37p7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvst4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prn2k")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="fogo" type="Node2D" unique_id=1072842850]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1886126709]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=60401633]
+shape = SubResource("CircleShape2D_11fwb")
+debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1286961829]
+sprite_frames = SubResource("SpriteFrames_myida")
+frame_progress = 0.0025164601
