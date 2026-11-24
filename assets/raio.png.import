@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddjmf2dab12sx"
-path="res://.godot/imported/Sprites.png-6f4207110800dd945b5a60c8dabb4896.ctex"
+uid="uid://bb3sxpsij600y"
+path="res://.godot/imported/raio.png-df9d45f85976e75596e32eaf5404b2a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites.png"
-dest_files=["res://.godot/imported/Sprites.png-6f4207110800dd945b5a60c8dabb4896.ctex"]
+source_file="res://assets/raio.png"
+dest_files=["res://.godot/imported/raio.png-df9d45f85976e75596e32eaf5404b2a2.ctex"]
 
 [params]
 
