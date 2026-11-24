@@ -1,0 +1,14 @@
+[gd_resource type="TileSet" format=3 uid="uid://bq23u4ivr76ni"]
+
+[ext_resource type="Texture2D" uid="uid://u4ottagvh0b6" path="res://assets/grama_parede.png" id="1_tov6g"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7g152"]
+resource_name = "grama e parede"
+texture = ExtResource("1_tov6g")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:1/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_7g152")
