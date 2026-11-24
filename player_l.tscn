@@ -1,12 +1,42 @@
 [gd_scene format=3 uid="uid://48hfhgbcltuv"]
 
 [ext_resource type="Script" uid="uid://b7rnv01i1kn7a" path="res://movement_left.gd" id="1_23ycj"]
-[ext_resource type="Texture2D" uid="uid://cnklotvrr1qvu" path="res://assets/square.png" id="1_rnxwr"]
+[ext_resource type="Texture2D" uid="uid://hxhojo2adqhq" path="res://assets/goblin_idle.png" id="2_23ycj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dy6e"]
+atlas = ExtResource("2_23ycj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nto1d"]
+atlas = ExtResource("2_23ycj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_11fwb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dy6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nto1d")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11fwb"]
+size = Vector2(17, 30)
 
 [node name="PlayerL" type="Node2D" unique_id=2055167309]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2069768529]
 script = ExtResource("1_23ycj")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=297017376]
-texture = ExtResource("1_rnxwr")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=378042585]
+sprite_frames = SubResource("SpriteFrames_11fwb")
+frame_progress = 0.24353002
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2126507800]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_11fwb")
