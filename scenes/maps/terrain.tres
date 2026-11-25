@@ -1,11 +1,10 @@
 [gd_resource type="TileSet" format=3 uid="uid://bb2a3hrybkxul"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6kcsb"]
-load_path = "res://.godot/imported/grama_parede.png-c916e0c9982c19d443efe35c76b21f0c.ctex"
+[ext_resource type="Texture2D" uid="uid://u4ottagvh0b6" path="res://assets/grama_parede.png" id="1_terrain"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o06wp"]
 resource_name = "terrain"
-texture = SubResource("CompressedTexture2D_6kcsb")
+texture = ExtResource("1_terrain")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:1/0 = 0
