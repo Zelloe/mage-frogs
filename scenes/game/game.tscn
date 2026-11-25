@@ -8,5 +8,5 @@
 [node name="Map" parent="." unique_id=1652249334 instance=ExtResource("1_e2o6t")]
 
 [node name="CharacterBody2D" parent="." unique_id=2069768529 instance=ExtResource("2_7h61r")]
-position = Vector2(51, 59)
+position = Vector2(122, 137)
 side = -1
