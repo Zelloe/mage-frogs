@@ -2,11 +2,22 @@
 
 [ext_resource type="PackedScene" uid="uid://b282asqwi1h0e" path="res://scenes/maps/map.tscn" id="1_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://48hfhgbcltuv" path="res://scenes/players/player.tscn" id="2_7h61r"]
+[ext_resource type="PackedScene" uid="uid://dclsm0xb6sbd2" path="res://scenes/spells/fire.tscn" id="3_0sr1o"]
+[ext_resource type="Script" uid="uid://cpjo6kujlgewj" path="res://scenes/players/spawn_proj.gd" id="3_kelw5"]
 
 [node name="game" type="Node2D" unique_id=2098349497]
 
 [node name="Map" parent="." unique_id=1652249334 instance=ExtResource("1_e2o6t")]
 
-[node name="CharacterBody2D" parent="." unique_id=2069768529 instance=ExtResource("2_7h61r")]
-position = Vector2(122, 137)
+[node name="P1" parent="." unique_id=2069768529 instance=ExtResource("2_7h61r")]
+position = Vector2(-357, -125)
+script = ExtResource("3_kelw5")
+
+[node name="P2" parent="." unique_id=197047010 instance=ExtResource("2_7h61r")]
+position = Vector2(357, -125)
 side = -1
+
+[node name="fogo" parent="." unique_id=1072842850 instance=ExtResource("3_0sr1o")]
+position = Vector2(-341, 21)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1009825319]

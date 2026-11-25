@@ -1,17 +1,11 @@
-extends Node2D
+extends CharacterBody2D
 
 @export var speed = 32
-var direction: int 
+var side: int
+var spawnpos: Vector2
 
-var velocity: int:
-	get:
-		return speed * direction
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	global_position = spawnpos
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	
-	pass
+	velocity = Vector2(0, -speed)
