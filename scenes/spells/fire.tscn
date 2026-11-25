@@ -1,5 +1,6 @@
-[gd_scene format=3 uid="uid://d1gdrujrgjoli"]
+[gd_scene format=3 uid="uid://dclsm0xb6sbd2"]
 
+[ext_resource type="Script" path="res://scenes/spells/fire.gd" id="1_n1cdk"]
 [ext_resource type="Texture2D" uid="uid://bvc2bb24if61w" path="res://assets/fogo.png" id="1_xs3m7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_11fwb"]
@@ -42,6 +43,9 @@ animations = [{
 }]
 
 [node name="fogo" type="Node2D" unique_id=1072842850]
+script = ExtResource("1_n1cdk")
+speed = null
+direction = null
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1886126709]
 
