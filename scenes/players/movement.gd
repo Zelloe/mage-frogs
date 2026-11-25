@@ -9,6 +9,7 @@ var action_down: String
 
 
 func _ready():
+	scale.x = side
 	if side > 0:
 		action_up = "p1_up"
 		action_down = "p1_down"
