@@ -28,6 +28,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_11fwb"]
 size = Vector2(17, 30)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpnn2"]
+size = Vector2(17, 30)
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2069768529]
 script = ExtResource("1_23ycj")
 
@@ -35,6 +38,9 @@ script = ExtResource("1_23ycj")
 sprite_frames = SubResource("SpriteFrames_11fwb")
 frame_progress = 0.24353002
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2126507800]
+[node name="wall_collider" type="CollisionShape2D" parent="." unique_id=2126507800]
 position = Vector2(0.5, 1)
 shape = SubResource("RectangleShape2D_11fwb")
+
+[node name="projectile_collider" type="CollisionShape2D" parent="." unique_id=1833180951]
+shape = SubResource("RectangleShape2D_wpnn2")
