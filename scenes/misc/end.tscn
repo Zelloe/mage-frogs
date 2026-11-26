@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bdmb6ducxrfnl"]
+
+[sub_resource type="GDScript" id="GDScript_gj03b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wpnn2"]
+size = Vector2(5, 320)
+
+[node name="End" type="Node2D" unique_id=1822310428]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=356237567]
+monitorable = false
+script = SubResource("GDScript_gj03b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1874026800]
+shape = SubResource("RectangleShape2D_wpnn2")
