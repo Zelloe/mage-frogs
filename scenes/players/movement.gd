@@ -24,6 +24,7 @@ func _physics_process(delta: float) -> void:
 	
 	velocity.y = move_toward(velocity.y, target_velocity, rate * delta)
 	move_and_slide()
+	position.y = clamp(position.y, -155, 140)
 	
 func _on_projectile_collider_body_entered(body):
 	print("Collision detected with: ", body.name)
