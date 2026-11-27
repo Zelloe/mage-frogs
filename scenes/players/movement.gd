@@ -26,4 +26,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func _on_projectile_collider_body_entered(body):
-	body.destroy()
+	print("Collision detected with: ", body.name)
+	body.queue_free()
+	queue_free()

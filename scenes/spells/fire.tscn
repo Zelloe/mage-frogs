@@ -42,15 +42,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="fogo" type="Node2D" unique_id=1072842850]
-
-[node name="Area2D" type="Area2D" parent="." unique_id=1663593522]
+[node name="fogo" type="Area2D" unique_id=1663593522]
 script = ExtResource("1_n1cdk")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=60401633]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=60401633]
 shape = SubResource("CircleShape2D_11fwb")
 debug_color = Color(0, 0.6, 0.7019608, 0.41960785)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D" unique_id=1286961829]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1286961829]
 sprite_frames = SubResource("SpriteFrames_myida")
 frame_progress = 0.0025164601
