@@ -1,1 +1,1 @@
-# mage-frogs
+# Magic Spells
